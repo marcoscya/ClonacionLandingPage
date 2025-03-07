@@ -1,0 +1,100 @@
+.absolute {
+    position: absolute;
+    top: 300px;
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.bg-shape1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: absolute;
+}
+
+.bg-shape2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 9999px;
+    position: absolute;
+}
+
+.opacity-50 {
+    opacity: 0.4; 
+}
+
+.bg-blur {
+    filter: blur(60px); 
+}
+
+.bg-teal {
+    background-color: #6581e7; 
+}
+
+.bg-purple {
+    background-color: #dd935a; 
+}
+
+.bg-shape1.bg-teal {
+    width: 200px;
+    height: 200px;
+    transform: translateY(300px) translateX(-90px);
+}
+
+.bg-shape1.bg-purple {
+    width: 350px;
+    width: 350p;
+    transform: translateY(350px) translateX(100px);
+}
+
+.circulo-estrella{
+    position: absolute;
+    top: -390px;
+    right: -490px;
+    transform: rotate(-210deg);
+    z-index: -1;
+}
+
+.circulo-estrella img{
+    width: 96rem;
+    height: 60rem;
+    z-index: -1;
+}
+
+
+
+.container-cinco-parte-uno {
+    position: relative;
+    z-index: 1;
+}
+
+.container-cinco-parte-uno::before {
+    content: "";
+    position: absolute;
+    width: 300px; /* Tamaño del efecto */
+    height: 300px;
+    background-color: #EDEEFF;
+    border-radius: 50%;
+    opacity: 0.9; /* Ajusta la opacidad */
+    filter: blur(30px); /* Difumina los bordes */
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.circulo-estrella-dos {
+    position: absolute;
+    transform: rotate(2deg);
+    top: 140rem;
+    left: -32rem;
+    z-index: -2;
+}
+
+.circulo-estrella-dos img{
+    width: 90rem;
+    height: 45rem;
+    z-index: -2;
+}
