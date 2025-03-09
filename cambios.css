@@ -40,13 +40,13 @@
 .bg-shape1.bg-teal {
     width: 200px;
     height: 200px;
-    transform: translateY(300px) translateX(-90px);
+    transform: translateY(200px) translateX(-90px);
 }
 
 .bg-shape1.bg-purple {
     width: 350px;
     width: 350p;
-    transform: translateY(350px) translateX(100px);
+    transform: translateY(300px) translateX(100px);
 }
 
 .circulo-estrella{
