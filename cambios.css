@@ -1,3 +1,5 @@
+@import url(root.css);
+
 .absolute {
     position: absolute;
     top: 300px;
@@ -88,7 +90,7 @@
 .circulo-estrella-dos {
     position: absolute;
     transform: rotate(2deg);
-    top: 140rem;
+    top: 145rem;
     left: -32rem;
     z-index: -2;
 }
@@ -97,4 +99,72 @@
     width: 90rem;
     height: 45rem;
     z-index: -2;
+}
+
+
+/*                CLIPPY               */
+/*=====================================*/
+.traductor{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 13;
+}
+
+.traductor button{
+    all: unset;
+}
+
+.traductor img{
+    width: 45px;
+    height: 45px;
+}
+
+.clippy{
+    display: none;
+    position: fixed;
+    z-index: 12;
+    bottom: 30px;
+    left: 20px;
+}
+
+.clippy img{
+    width: 140px;
+}
+
+.clippy-mensaje {
+    display: none;
+    position: fixed;
+    background-color: #ffffcc;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 12;
+    bottom: 100px;
+    left: 110px;
+}
+
+.clippy-dialogo{
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.clippy-eleccion{
+    border-top: 1px solid var(--color-gray);
+    padding: 10px;
+    z-index: 12;
+}
+
+.clippy-eleccion button{
+    background-color: transparent;
+    border: 1px solid var(--color-gray);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.clippy-eleccion button p{
+    font-size: 12px;
 }

@@ -154,9 +154,16 @@ body{
 }
 
 .container-uno-parte-uno-titulo span{
+    font-size: 90px;
+    color: var(--color-most-used);
     font-family: "Abril Fatface", serif;
     font-weight: bold;
 }
+
+.container-uno-pequeño-cambio-uno, .container-uno-pequeño-cambio-dos{
+    display: flex;
+}
+
 
 .container-uno-parte-uno-subtitulo{
     font-size: 20px;
@@ -397,7 +404,7 @@ body{
 
 .container-tres-parte-uno{
     position: absolute;
-    top: 82rem;
+    top: 87rem;
     left: -450px;
     transform: rotate(20deg);
 }
@@ -411,8 +418,7 @@ body{
 .container-tres-parte-dos{
     position: absolute;
     right: 0;
-
-    transform: translateX(-8rem);
+    padding-right: 75px;
 }
 
 .container-tres-parte-dos p{

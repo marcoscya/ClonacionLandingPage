@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,27 @@
 </head>
 <body>
 
+    <div class="traductor">
+        <button onclick="vieneClippy()">
+        <img src="image/resoure/boton-emergente.png" alt="">
+        </button>
+    </div>
+
+    <div class="clippy" id="clippy">
+        <img src="image/resoure/clippy.png" alt="">
+    </div>
+
+    <div class="clippy-mensaje" id="clippyMensaje">
+        <div class="clippy-dialogo">
+            <p data-i18n="clippydialogoUno">Choose one of</p>
+            <p data-i18n="clippydialogoDos">the languages</p>
+        </div>
+        <div class="clippy-eleccion">
+            <button onclick="cambiarIdioma('es')"><p data-i18n="botonEspañol">Spanish</p></button>
+            <button onclick="cambiarIdioma('en')"><p data-i18n="botonIngles">English</p></button>
+        </div>
+    </div>
+
     <nav class="nav-contenido" data-aos="fade-up">
         <div class="nav-logo">
             <p class="nav-sublogo-parte-uno" data-aos="fade-up">C</p>
@@ -26,12 +47,12 @@
     
         <div class="nav-letras">
             <ul>
-                <li data-aos="fade-up">Home</li>
-                <li data-aos="fade-up">About Us</li>
-                <li data-aos="fade-up">Our Team</li>
-                <li data-aos="fade-up">Pricing</li>
-                <li data-aos="fade-up">Blog</li>
-                <li data-aos="fade-up">Contact</li>
+                <li data-aos="fade-up" data-i18n="home">Home</li>
+                <li data-aos="fade-up" data-i18n="aboutus">About Us</li>
+                <li data-aos="fade-up" data-i18n="ourteam">Our Team</li>
+                <li data-aos="fade-up" data-i18n="pricing">Pricing</li>
+                <li data-aos="fade-up" data-i18n="blog">Blog</li>
+                <li data-aos="fade-up" data-i18n="contact">Contact</li>
             </ul>
         </div>
     
@@ -61,29 +82,31 @@
             </div>
             
             <div class="container-uno-parte-uno-titulo">
-                <h1 data-aos="fade-right">Smarter <span>Writing<span></h1>
-                <h1 data-aos="fade-right">with <span>AI Tools</span></h1>
+                <h1 data-aos="fade-right"data-i18n="smarter">Smarter <span>Writing<span></h1>
+                <span data-aos="fade-right" data-i18n="writing"></span>
+                <h1 data-aos="fade-right" data-i18n="with">with <span>AI Tools</span></h1>
+                <span data-aos="fade-right" data-i18n="ai"></span>
             </div>
 
             <div class="container-uno-parte-uno-subtitulo">
-                <p data-aos="fade-right">Coca: Your all-in-one AI platform for creating</p>
-                <p data-aos="fade-right">content quickly and cost-effectively</p>
+                <p data-aos="fade-right" data-i18n="coca">Coca: Your all-in-one AI platform for creating</p>
+                <p data-aos="fade-right" data-i18n="content">content quickly and cost-effectively</p>
             </div>
 
             <div class="container-uno-parte-uno-botones" data-aos="fade-right">
                 <button>
-                    <p>Try The Playground</p>
+                    <p data-i18n="try">Try The Playground</p>
                 </button>
 
                 <button>
-                    <p>Watch A Demo</p>
+                    <p data-i18n="watch">Watch A Demo</p>
                 </button>
             </div>
 
             <div class="container-uno-parte-uno-iconos-estructura">
                 
                 <div class="container-uno-parte-uno-iconos-texto">
-                    <p data-aos="fade-right">TRUSTED BY BIG COMPANIES</p>
+                    <p data-aos="fade-right" data-i18n="trusted">TRUSTED BY BIG COMPANIES</p>
                 </div>
 
                 <div class="container-uno-parte-uno-iconos-columna">
@@ -135,19 +158,19 @@
                 <div class="container-dos-parte-dos-letras">
                     
                     <div class="container-dos-parte-dos-letras-subtitulo">
-                        <h2>Rapid and confident</h2>
-                        <h2>communication tool.</h2>
+                        <h2 data-i18n="rapid">Rapid and confident</h2>
+                        <h2 data-i18n="communication">communication tool.</h2>
                     </div>
 
                     <div class="container-dos-parte-dos-letras-descripcion">
-                        <p>We understand the feeling of unease that comes when you're eager to share</p>
-                        <p>something you've written. It can be incredibly frustrating when your writing falls</p>
-                        <p>short of conveying the ideas you wish to express</p>
+                        <p data-i18n="we">We understand the feeling of unease that comes when you're eager to share</p>
+                        <p data-i18n="something">something you've written. It can be incredibly frustrating when your writing falls</p>
+                        <p data-i18n="short">short of conveying the ideas you wish to express</p>
                     </div>
 
                     <div class="container-dos-parte-dos-letras-descripcion">
-                        <p>That's why developed the Masco AI writing tool. It empowars you to write with </p>
-                        <p>greater speed and confidence while also saving you valuable time.</p>
+                        <p data-i18n="that">That's why developed the Masco AI writing tool. It empowars you to write with</p>
+                        <p data-i18n="greater">greater speed and confidence while also saving you valuable time.</p>
                     </div>
 
                 </div>            
@@ -168,18 +191,18 @@
         
         <div class="container-tres-parte-dos" data-aos="fade-left">
             <div class="container-tres-parte-dos-texto-uno">
-                <p>Our team, composed of word-leading</p>
-                <p>machine vision engineers and mobile</p>
-                <p>devide programmers, <span>is avaible to</span></p>
-                <p><span>perform custom research and develop</span></p>
-                <p><span>tailored solutions.</span></p>
+                <p data-i18n="our">Our team, composed of word-leading</p>
+                <p data-i18n="machine">machine vision engineers and mobile</p>
+                <p data-i18n="device">device programmers, <span>is avaible to</span></p>
+                <p><span data-i18n="perform">perform custom research and develop</span></p>
+                <p><span data-i18n="tailored">tailored solutions.</span></p>
             </div>
 
             <div class="container-tres-parte-dos-texto-dos">
-                <p><span>It has the capability to read and generate</span></p>
-                <p><span>content in more than 65 languagues,</span></p>
-                <p><span>encompassing English, Spanish,</span></p>
-                <p><span>Japanese.</span></p>
+                <p><span data-i18n="it">It has the capability to read and generate</span></p>
+                <p><span data-i18n="content">content in more than 65 languagues,</span></p>
+                <p><span data-i18n="encompassing">encompassing English, Spanish,</span></p>
+                <p><span data-i18n="japanese">Japanese.</span></p>
             </div>
         </div>
     </div>
@@ -191,13 +214,13 @@
             <div class="container-cuatro-parte-uno-textos">
 
                 <div class="container-cuatro-parte-uno-texto-uno">
-                    <h3 data-aos="fade-right">Operates on your</h3>
-                    <h3 data-aos="fade-right">preferred website too.</h3>
+                    <h3 data-aos="fade-right" data-i18n="operates">Operates on your</h3>
+                    <h3 data-aos="fade-right" data-i18n="preferred">preferred website too.</h3>
                 </div>
 
                 <div class="container-cuatro-parte-uno-texto-dos">
-                    <p data-aos="fade-left">Connect our with software the apps you use and love.</p>
-                    <p data-aos="fade-left">Easily bring AI into your workflow to improve</p>
+                    <p data-aos="fade-left" data-i18n="connect">Connect our with software the apps you use and love.</p>
+                    <p data-aos="fade-left" data-i18n="easily">Easily bring AI into your workflow to improve</p>
                 </div>
 
             </div>
@@ -260,19 +283,19 @@
 
         <div class="container-cinco-parte-uno">
             <div class="container-cinco-parte-uno-texto-uno">
-                <h2 data-aos="fade-right">Unlock various writing</h2>
-                <h2 data-aos="fade-right">benefits with AI Writer.</h2>
+                <h2 data-aos="fade-right" data-i18n="unlockvarious">Unlock various writing</h2>
+                <h2 data-aos="fade-right" data-i18n="benefits">benefits with AI Writer.</h2>
             </div>
 
             <div class="container-cinco-parte-uno-texto-dos">
-                <p data-aos="fade-right">Unlock an Array of Writing Benefits</p>
-                <p data-aos="fade-left">and Enhancements Through the</p>
-                <p data-aos="fade-right">Power of AI Writer.</p>
+                <p data-aos="fade-right" data-i18n="unlockan">Unlock an Array of Writing Benefits</p>
+                <p data-aos="fade-left" data-i18n="and">and Enhancements Through the</p>
+                <p data-aos="fade-right" data-i18n="power">Power of AI Writer.</p>
             </div>
 
             <div class="container-cinco-parte-uno-boton" data-aos="fade-up">
                 <button>
-                    <p>Learn More</p>
+                    <p data-i18n="learn">Learn More</p>
                 </button>
             </div>
         </div>
@@ -383,18 +406,18 @@
             </div>
 
             <div class="container-seis-contenido-titulo">
-                <h1 data-aos="zoom-in-right">Seamless Integrations</h1>
-                <h1 data-aos="zoom-in-left">with Coca</h1>
+                <h1 data-aos="zoom-in-right" data-i18n="seamless">Seamless Integrations</h1>
+                <h1 data-aos="zoom-in-left" data-i18n="withcoca">with Coca</h1>
             </div>
 
             <div class="container-seis-contenido-descripcion">
-                <p data-aos="zoom-in-right">Start by Introducing the concept of Integrations and their</p>
-                <p data-aos="zoom-in-left">significance in optimizing workflows for AI Interview notes.</p>
+                <p data-aos="zoom-in-right" data-i18n="startby">Start by Introducing the concept of Integrations and their</p>
+                <p data-aos="zoom-in-left" data-i18n="significance">significance in optimizing workflows for AI Interview notes.</p>
             </div>
 
             <div class="container-seis-contenido-boton" data-aos="zoom-in-up">
                 <button>
-                    <p>View all Integrations</p>
+                    <p data-i18n="viewall">View all Integrations</p>
                 </button>
             </div>
         </div>
@@ -403,20 +426,20 @@
     <div class="container-siete-estructura" data-aos="zoom-in">
         <div class="container-siete-contenido-uno">
             <div class="container-siete-contenido-titulo">
-                <h1 data-aos="fade-right">Build your team today</h1>
-                <h1 data-aos="fade-right">trough Coca</h1>
+                <h1 data-aos="fade-right" data-i18n="build">Build your team today</h1>
+                <h1 data-aos="fade-right" data-i18n="trough">through Coca</h1>
             </div>
 
             <div class="container-siete-contenido-descripcion">
-                <p data-aos="fade-right">Suscribe to our newletter to get the latest AI Writing</p>
+                <p data-aos="fade-right" data-i18n="suscribe">Suscribe to our newletter to get the latest AI Writing</p>
             </div>
 
             <div class="container-siete-contenido-botones" data-aos="fade-right">
                 <button>
-                    <p>Try free 1 month</p>
+                    <p data-i18n="tryfree">Try free 1 month</p>
                 </button>
                 <button>
-                    <p>Book a demo</p>
+                    <p data-i18n="book">Book a demo</p>
                 </button>
             </div>
         </div>
@@ -435,23 +458,23 @@
     <div class="container-ocho-estructura">
         <div class="container-ocho-contenido-uno">
             <div class="container-ocho-contenido-titulo">
-                <h1 data-aos="fade-right">Ready to</h1>
-                <h1 data-aos="fade-right">get <span>started ?</span></h1>
+                <h1 data-aos="fade-right" data-i18n="readyto">Ready to</h1>
+                <h1 data-aos="fade-right" data-i18n="getstarted">get <span>started ?</span></h1>
             </div>
 
             <div class="container-ocho-contenido-informacion">
-                <p data-aos="fade-right">If there are questions you want to ask, we will</p>
-                <p data-aos="fade-right">answear all your question</p>
+                <p data-aos="fade-right" data-i18n="if">If there are questions you want to ask, we will</p>
+                <p data-aos="fade-right" data-i18n="answear">answear all your question</p>
             </div>
 
             <div class="container-ocho-contenido-dos">
                 <div class="container-ocho-contenido-dos-campo" data-aos="fade-right">
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email" data-i18n="enter">
                 </div>
 
                 <div class="container-ocho-contenido-dos-boton" data-aos="fade-right">
                     <button>
-                        <p>Subcribe</p>
+                        <p data-i18n="subcribe">Subcribe</p>
                     </button>
                 </div>
             </div>
@@ -459,23 +482,23 @@
 
         <div class="container-ocho-contenido-final">
             <div class="container-ocho-contenido-final-texto">
-                <p data-aos="fade-left">Maybe your question is have been</p>
-                <p data-aos="fade-left">answered, check this out.</p>
+                <p data-aos="fade-left" data-i18n="maybe">Maybe your question is have been</p>
+                <p data-aos="fade-left" data-i18n="answered">answered, check this out.</p>
             </div>
 
             <div class="container-ocho-contenido-final-info">
                 <div data-aos="zoom-in-down">
-                    <p>What is Coca Soft</p>
+                    <p data-i18n="whatis">What is Coca Soft</p>
                     <img src="image/flecha.png" alt="">
                 </div>
     
                 <div data-aos="zoom-in">
-                    <p>How can I get service from Coca Soft</p>
+                    <p data-i18n="how">How can I get service from Coca Soft</p>
                     <img src="image/flecha.png" alt="">
                 </div>
     
                 <div data-aos="zoom-in-up">
-                    <p>What kind of service will I get</p>
+                    <p data-i18n="whatkind">What kind of service will I get</p>
                     <img src="image/flecha.png" alt="">
                 </div>
             </div>
@@ -486,7 +509,7 @@
 
     <footer>
         <div>
-            <p> © All Rights Reserved</p>
+            <p data-i18n="reserved"> © All Rights Reserved</p>
         </div>
     </footer>
     
