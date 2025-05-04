@@ -12,5 +12,5 @@ Este proyecto es una recreación basada en el backup de una imagen, desarrollado
 🔹 CSS
 🔸 JAVASCRIPT
 
-🖥️ [Visualizar Web](https://marcoscya.github.io/Caso2/)
+🖥️ [Visualizar Web](https://marcoscya.github.io/ClonacionLandingPage/)
 
